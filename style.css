@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+}
+/* .banner-section{
+    width: 1440px;
+    height: 677px;
+    background: #2D25A0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+.text-section{
+    left:0px;
+    top:0px;
+    width:50%;
+    height: 100vh;
+   
+  }
+
+
+.banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner-section img{
+    width: 556.01px;
+    height: 438px;
+    padding: 50px;
+} */
+.flexible-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 1440px;
+    height: 677px;
+    background: #2D25A0;
+}
+     
+  .half-width {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .half-width img {
+    width: 80%;
+    transform: translate(0%,0%);
+    animation:zoom-out 3s linear infinite;
+    animation-play-state: running;
+
+  }
+  @keyframes  zoom-out{
+      100%{
+          width:100%;
+      }
+  }
+  .text-part{
+      margin-top:200px;
+      margin-left:156px;
+  }
+  .head-line{
+    font-size: 64px;
+    line-height: 80px;
+    margin-top:0px;
+    margin-right: 50px;
+    color: #FFFFFF;;
+  }
+  .link-button {
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  .link-button:hover{
+      opacity: .5;
+  }
+  .players{
+      width:82%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-row-gap: 30px;
+    margin-left:170px;
+    margin-top:85px;
+    margin-bottom: 158px;
+}
+.player{
+   
+    width: 300px;
+    height: 426px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding:10px;
+    
+}
+.tittle{
+    display: inline;
+}
+.player img{
+    height:256px;
+    width:100%;
+}
+.text{
+   font-size: 12px;
+   color: #6C6C6C;
+   margin-bottom:10px;
+  text-align: justify;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 483.87px;
+    height: 213px;
+    margin-left:450px;
+    padding:0px;
+}
+.img-footer{
+    width: 483.87px;
+    height: 68px;
+}
+.copyright{
+    color: #000000;
+}
+.social-icon .fab{
+    margin: 0px 14px;
+    background: #969BAB;
+    color: #6C6C6C;
+    padding:10px;
+    border-radius: 10px;
+}
+
