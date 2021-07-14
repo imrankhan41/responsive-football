@@ -6,7 +6,7 @@ body{
     padding:0;
 }
 
- 
+ /* first section */
 .flexible-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -30,15 +30,8 @@ body{
     animation-play-state: running;
 
   }
-  @media  only screen and (max-width:688px) {
-      .flexible-container{
-          display: grid;
-          grid-template-columns: repeat(1,1fr);
-          width:250vw;
-          height: 200vh;
-      }
-  }
-
+  
+/* Animation */
   @keyframes  zoom-out{
       100%{
           width:100%;
@@ -66,8 +59,9 @@ body{
   .link-button:hover{
       opacity: .5;
   }
+  /* players */
   .players{
-    width:82%;
+    width:88%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
@@ -119,7 +113,7 @@ body{
     text-decoration: none;
     color: black;
 }
-
+/* login form */
     .login-container{
       display: flex;
     justify-content: center;
@@ -180,6 +174,7 @@ body{
     background-color: lightgray;
     
 }
+/* footetr */
 .footer{
     display: flex;
     flex-direction: column;
@@ -204,17 +199,25 @@ body{
     padding:10px;
     border-radius: 10px;
 }
-
+/* responsive for mobile */
 @media  only screen and (max-width:688px) {
-    .player-section{
-        width:1000vw;
+    .flexible-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width:400vw;
+        height: 250vh;
+        
     }
+}
+@media  only screen and (max-width:688px) {
+    
+    
     .players{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        width:350vw;
-        height: 200vh;
-        margin-bottom: 4500px;
+        width:400vw;
+        height: 500vh;
+        margin-bottom: 2500px;
     }
     .newses{
         display: grid;
